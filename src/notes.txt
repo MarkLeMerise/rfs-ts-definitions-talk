@@ -1,0 +1,4 @@
+- Capture the interface first, worry about type-narrowing later (it's an iterative process)
+- Skim the code at least once, that's where most of the type information is revealed
+- Think of type creation as unit testing: write out a "test" case to see if type-checking even passes
+    - (that's how the DefinitelyTyped repo operates)

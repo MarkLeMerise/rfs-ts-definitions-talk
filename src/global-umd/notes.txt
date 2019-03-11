@@ -1,0 +1,3 @@
+- Documentation was critical here
+- Thankfully, it's a simple module, so it was easy to run
+- Don't prematurely design class-based types even if you see "prototype"

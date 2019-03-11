@@ -1,0 +1,19 @@
+{
+  "name": "rfs-sample-app",
+  "scripts": {
+    "periodic-table-test": "tsc && node dist/periodic-table/periodic-table"
+  },
+  "dependencies": {
+    "@types/clipboard": "^2.0.1",
+    "@types/node": "^10.12.24",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "cool-lib": "^1.1.0",
+    "money": "^0.2.0",
+    "periodic-table": "0.0.8",
+    "react": "^16.8.1",
+    "react-clipboard.js": "^2.0.2",
+    "react-dom": "^16.8.1",
+    "typescript": "^3.3.3"
+  }
+}
