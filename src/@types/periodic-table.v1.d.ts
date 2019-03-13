@@ -1,32 +1,14 @@
-// declare module "periodic-table" {
-//   interface IChemicalElement {
-//     atomicMass: string;
-//     atomicNumber: number;
-//     atomicRadius: number;
-//     boilingPoint: number;
-//     bondingType: string;
-//     cpkHexColor: string;
-//     density: number;
-//     electronAffinity: number;
-//     electronegativity: number;
-//     electronicConfiguration: string;
-//     groupBlock: string;
-//     ionRadius: string;
-//     ionizationEnergy: number;
-//     meltingPoint: number;
-//     name: string;
-//     oxidationStates: string;
-//     standardState: string;
-//     symbol: string;
-//     vanDelWaalsRadius: number;
-//     yearDiscovered: number;
-//   }
+declare module "periodic-table" {
+  // Need a definition for IChemicalElement
 
-//   // Notice these each match a module.export.* statement in the source file
-//   export function all(): IChemicalElement[];
-//   export const csvFile: string;
-//   export const elements: { [elementName: string]: IChemicalElement };
-//   export const jsonFile: string;
-//   export const numbers: { [atomicNumber: number]: IChemicalElement };
-//   export const symbols: { [symbol: string]: IChemicalElement };
-// }
+  // Notice these each match a module.export.* statement in the source file
+  // TODO: Change the "any" typing to the proper types
+  export function all(): any;
+  export const elements: any;
+  export const numbers: any;
+  export const symbols: any;
+
+  // Should these necessarily be exposed?
+  export const jsonFile: string;
+  export const csvFile: string;
+}

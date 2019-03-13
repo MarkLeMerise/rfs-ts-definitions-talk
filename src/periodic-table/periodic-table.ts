@@ -1,3 +1,4 @@
+// var pt = require('periodic-table');
 import * as PeriodicTable from "periodic-table";
 
 /*
@@ -17,8 +18,8 @@ PeriodicTable.symbols.He;
 PeriodicTable.numbers[2];
 
 // This should fail with
-// pt.symbols.Mark = {};
+// PeriodicTable.symbols.Dwightium = {};
 
-const gold: IChemicalElement = PeriodicTable.symbols.Au;
+const gold = PeriodicTable.all()[78];
 
 console.log(gold);

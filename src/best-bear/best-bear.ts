@@ -3,15 +3,10 @@ interface IBearIndex {
   kind: string;
 }
 
-function whatKindOfBearIsBest(kinds: string[]) {
+function whatKindOfBearIsBest(kinds: string[]): IBearIndex {
   const randomInt = Math.floor(Math.random() * kinds.length);
   const kind = kinds[randomInt];
-  let confidenceFactor: number;
-
-  if (kind === "black") {
-    confidenceFactor = 1;
-  }
-
+  const confidenceFactor = kind === "black" ? 1 : undefined;
   return { confidenceFactor, kind };
 }
 
